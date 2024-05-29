@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exam</string>
+
+    <string-array name="team">
+        <item>الفرقة الأولي</item>
+        <item>الفرقة الثانية</item>
+        <item>الفرقة الثالثة</item>
+        <item>الفرقة الرابعة</item>
+    </string-array>
+
+    <string-array name="dept">
+        <item>الحاسب الآلي</item>
+        <item>التربية الفنية</item>
+        <item>الاقتصاد المنزلي</item>
+        <item>الإعلام التربوي</item>
+    </string-array>
+
+    <string-array name="cat">
+        <item>أستاذ</item>
+        <item>طالب</item>
+    </string-array>
+
+    <string-array name="exam_type">
+        <item>اختيار من متعدد</item>
+        <item>صح و خطأ</item>
+    </string-array>
+
+    <string-array name="exam_time">
+        <item>دقائق للامتحان كاملاَ</item>
+        <item>دقيقة لكل سؤال</item>
+    </string-array>
+
+    <string name="newExam">إضافة اختبار جديد</string>
+    <string name="result">الاختبارات المنتهية</string>
+    <string name="logout">خروج</string>
+    <string name="next">السؤال الثاني</string>
+    <string name="save">حفظ الاختبار</string>
+    <string name="cancel">الغاء</string>
+    <string name="Next">التالي</string>
+
+    <string name="True">صح</string>
+    <string name="False">خطأ</string>
+    <string name="ques">السؤال</string>
+    <string name="SuccessRate">نسبة النجاح: </string>
+    <string name="RepetitionRate">نسبة الرسوب: </string>
+    <string name="subject">المادة</string>
+    <string name="StudentsCount">عدد الطلاب: </string>
+    <string name="NewUserGo">مستخدم جديد؟</string>
+    <string name="IDorBarCode">أدخل الـID أو امسح الـBarCode:</string>
+    <string name="IDMaxLength">الرقم التعريفي،أقصي عدد = 16</string>
+    <string name="EnterYourPassword">أدخل كلمة  السر:</string>
+    <string name="password">كلمة السر</string>
+    <string name="login">دخول</string>
+    <string name="register">تسجيل</string>
+    <string name="stay_login">دخول تلقائي:</string>
+    <string name="select_team">اختر الفرقة:</string>
+    <string name="select_department">اختر الشعبة:</string>
+    <string name="subject_name">اسم المادة:</string>
+    <string name="programming">المادة</string>
+    <string name="exam_type">نوع الاختبار:</string>
+    <string name="questions_number">عدد الأسئلة:</string>
+    <string name="_20">1</string>
+    <string name="questions_time">وقت الأسئلة:</string>
+    <string name="date_and_time">التاريخ والوقت:</string>
+    <string name="question">السؤال:</string>
+    <string name="what_s_the_question">ما هو السؤال؟</string>
+    <string name="answers">الإجابات</string>
+    <string name="answer1">الإجابة1</string>
+    <string name="answer2">الإجابة2</string>
+    <string name="answer3_can_be_empty">الإجابة3 (يمكن تركها فارغة)</string>
+    <string name="answer4_can_be_empty">الإجابة4 (يمكن تركها فارغة)</string>
+    <string name="right_answer">الإجابة الصحية:</string>
+    <string name="select_your_team">اختر الفرقة:</string>
+    <string name="select_your_department">اختر شعبتك:</string>
+    <string name="select_your_category">اختر الفئة:</string>
+    <string name="enter_full_name">ادخل الاسم الرباعي:</string>
+    <string name="name">الاسم</string>
+    <string name="enter_strong_password">ادخل كلمة سر قوية</string>
+    <string name="already_user_go">مستخدم بالفعل؟</string>
+    <string name="todo">TODO</string>
+    <string name="res">\"Result = \"</string>
+    <string name="of">\" OF \"</string>
+
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student.SurveyStudentActivity"
+    android:background="@color/bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/survey" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvSurvey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/li2"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conSurvey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurvey">
+
+        <RadioGroup
+            android:id="@+id/RGmcSurvey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/rbAnswer1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/li1"
+                android:buttonTint="@color/main"
+                android:hint="@string/answer1"
+                android:padding="5dp"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main"
+                android:textSize="18sp"
+                tools:ignore="TextContrastCheck" />
+
+            <RadioButton
+                android:id="@+id/rbAnswer2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/li2"
+                android:hint="@string/answer2"
+                android:padding="5dp"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                tools:ignore="TextContrastCheck" />
+
+            <RadioButton
+                android:id="@+id/rbAnswer3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/li1"
+                android:buttonTint="@color/main"
+                android:hint="@string/answer3_can_be_empty"
+                android:padding="5dp"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rbAnswer4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/li2"
+                android:hint="@string/answer4_can_be_empty"
+                android:padding="5dp"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rbAnswer5"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/li2"
+                android:hint="@string/answer2"
+                android:padding="5dp"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:visibility="gone"
+                tools:ignore="TextContrastCheck" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnSurveyNext"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn"
+        android:text="@string/Next"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conSurvey"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

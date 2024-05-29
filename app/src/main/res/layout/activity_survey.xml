@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".professor.SurveyActivity"
+    android:background="@color/bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/survey" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etSurveyName"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:background="@drawable/et"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/survey_name"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
+
+            <Spinner
+                android:id="@+id/spnTeamSurvey"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/main"
+                android:entries="@array/team"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etSurveyName" />
+
+            <Spinner
+                android:id="@+id/spnDeptSurvey"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/main"
+                android:entries="@array/dept"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnTeamSurvey" />
+
+            <EditText
+                android:id="@+id/etSurvey"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:background="@drawable/et"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/survey"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:textAlignment="center"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnDeptSurvey"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etAnswer1Survey"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:background="@drawable/et"
+                android:gravity="center"
+                android:hint="@string/answer1"
+                android:inputType="textMultiLine|textPersonName"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etSurvey"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etAnswer2Survey"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:background="@drawable/et"
+                android:gravity="center"
+                android:hint="@string/answer2"
+                android:inputType="textMultiLine|textPersonName"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etAnswer1Survey"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etAnswer3Survey"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:background="@drawable/et"
+                android:gravity="center"
+                android:hint="@string/answer3_can_be_empty"
+                android:inputType="textMultiLine|textPersonName"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etAnswer2Survey"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etAnswer4Survey"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:background="@drawable/et"
+                android:gravity="center"
+                android:hint="@string/answer4_can_be_empty"
+                android:inputType="textMultiLine|textPersonName"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etAnswer3Survey"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etAnswer5Survey"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:background="@drawable/et"
+                android:gravity="center"
+                android:hint="@string/answer5_can_be_empty"
+                android:inputType="textMultiLine|textPersonName"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/main"
+                android:textColorHint="@color/main"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etAnswer4Survey"
+                tools:ignore="TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/ivSaveSurvey"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/main"
+                android:contentDescription="@string/todo"
+                android:padding="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline22"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etAnswer5Survey"
+                app:srcCompat="@drawable/ic_save" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_current"
+                android:textColor="@color/main"
+                app:layout_constraintEnd_toEndOf="@+id/ivSaveSurvey"
+                app:layout_constraintStart_toStartOf="@+id/ivSaveSurvey"
+                app:layout_constraintTop_toBottomOf="@+id/ivSaveSurvey"
+                tools:ignore="TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/ivNewSurvey"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/main"
+                android:contentDescription="@string/todo"
+                android:padding="3dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toBottomOf="@+id/etAnswer5Survey"
+                app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/new_"
+                android:textColor="@color/main"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ivNewSurvey"
+                app:layout_constraintStart_toStartOf="@+id/ivNewSurvey"
+                app:layout_constraintTop_toBottomOf="@+id/ivNewSurvey"
+                tools:ignore="TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/ivUploadSurvey"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/main"
+                android:contentDescription="@string/todo"
+                android:padding="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/etAnswer5Survey"
+                app:srcCompat="@drawable/ic_baseline_cloud_upload_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_saved"
+                android:textColor="@color/main"
+                app:layout_constraintEnd_toEndOf="@+id/ivUploadSurvey"
+                app:layout_constraintStart_toStartOf="@+id/ivUploadSurvey"
+                app:layout_constraintTop_toBottomOf="@+id/ivUploadSurvey"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.33" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.66" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

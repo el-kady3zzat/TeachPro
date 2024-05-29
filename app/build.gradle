@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.kady.tech"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/license.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0']
+        }
+    }
+
+    namespace 'com.example.tech'
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    //barcode
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+
+
+    //database
+    implementation group: 'com.backendless', name: 'backendless', version: '6.2.0'
+    // required for real-time database and real-time messaging
+    implementation('io.socket:socket.io-client:1.0.0') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+
+    //recycleView
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    //recycler view
+    implementation 'com.stone.vega.library:VegaLayoutManager:1.0.6'
+    implementation 'co.dift.ui.swipetoaction:library:1.1'
+    //text
+    implementation 'hanks.xyz:htextview-library:0.1.5'
+    //Toast
+    implementation 'com.github.GrenderG:Toasty:1.5.2'
+    //Button
+    implementation 'info.hoang8f:fbutton:1.0.5'
+    //Splash
+    implementation 'com.mikhaellopez:circularfillableloaders:1.3.2'
+    //Timer
+    implementation 'com.github.anastr:flattimelib:1.0.3'
+    //logo
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    //menu
+    implementation 'com.nightonke:boommenu:2.1.1'
+    implementation 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    //wheel
+    implementation 'devlight.io:arcprogressstackview:1.0.4'
+    //explode
+    implementation 'tyrantgit:explosionfield:1.0.1'
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+    //Celebrate
+    implementation 'nl.dionsegijn:konfetti-xml:2.0.2'
+    //Image Picker
+    implementation 'com.github.jrvansuita:PickImage:v3.0.01'
+    //roundedImage
+    implementation 'com.joooonho:selectableroundedimageview:1.0.1'
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.8'
+    //fetch downloading files
+    implementation "androidx.tonyodev.fetch2:xfetch2:3.1.6"
+    //pdf
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    //imageView zoom
+    implementation 'com.jsibbold:zoomage:1.3.1'
+    //video
+    implementation 'com.jarvanmo:exoplayerview:2.1.3'
+    //Celebrate
+    implementation 'nl.dionsegijn:konfetti-xml:2.0.2'
+
+
+    //filePicker
+//    implementation "com.github.abhishekti7:UnicornFilePicker:1.0.2"
+    //pdf
+//    implementation 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
+
+//    //fixDuplicate
+//    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+}

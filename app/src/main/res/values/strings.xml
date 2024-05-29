@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">Tech</string>
+
+    <string-array name="team">
+        <item>Level1</item>
+        <item>Level2</item>
+        <item>Level3</item>
+        <item>Level4</item>
+    </string-array>
+
+    <string-array name="dept">
+        <item>Computer</item>
+        <item>Art Education</item>
+        <item>Home Economics</item>
+        <item>Educational Media</item>
+    </string-array>
+
+    <string-array name="cat">
+        <item>Professor</item>
+        <item>Student</item>
+    </string-array>
+
+    <string-array name="exam_type">
+        <item>Multi Choice</item>
+        <item>True and False</item>
+    </string-array>
+
+    <string-array name="exam_time">
+        <item>Minutes For Whole Quiz</item>
+        <item>Minute For Every Question</item>
+    </string-array>
+
+    <string name="newExam">Add New Quiz</string>
+    <string name="result">Finished Quiz</string>
+    <string name="logout">Logout</string>
+    <string name="next">Next Question</string>
+    <string name="save">Save Quiz</string>
+    <string name="cancel">Cancel</string>
+    <string name="Next">Next</string>
+
+    <string name="True">True</string>
+    <string name="False">False</string>
+    <string name="ques">Question:</string>
+    <string name="SuccessRate">Success Rate: </string>
+    <string name="RepetitionRate">Failure Rate: </string>
+    <string name="subject">Course</string>
+    <string name="StudentsCount">Students Count: </string>
+    <string name="NewUserGo">New User? Go:</string>
+    <string name="IDorBarCode">Enter Your ID or Scan Your BarCode:</string>
+    <string name="IDMaxLength">ID, MaxLength=16</string>
+    <string name="EnterYourPassword">Enter Your Password:</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="stay_login">Auto Login:</string>
+    <string name="select_team">Select Level:</string>
+    <string name="select_department">Select Department:</string>
+    <string name="subject_name">Course Name:</string>
+    <string name="programming">Course</string>
+    <string name="exam_type">Quiz Type:</string>
+    <string name="questions_number">Questions Number:</string>
+    <string name="_20">1</string>
+    <string name="questions_time">Questions Time:</string>
+    <string name="date_and_time">Date and Time:</string>
+    <string name="question">Question:</string>
+    <string name="what_s_the_question">What\'s The Question?</string>
+    <string name="answers">Answers:</string>
+    <string name="answer1">Answer1</string>
+    <string name="answer2">Answer2</string>
+    <string name="answer3_can_be_empty">Answer3 (Can Be Empty)</string>
+    <string name="answer4_can_be_empty">Answer4 (Can Be Empty)</string>
+    <string name="answer5_can_be_empty">Answer5 (Can Be Empty)</string>
+    <string name="right_answer">Right Answer:</string>
+    <string name="select_your_team">Select Your Level:</string>
+    <string name="select_your_department">Select Your Department:</string>
+    <string name="select_your_category">Select Your Category:</string>
+    <string name="enter_full_name">Enter Full Name:</string>
+    <string name="name">Name</string>
+    <string name="enter_strong_password">Enter Password:</string>
+    <string name="already_user_go">Already User? Go:</string>
+    <string name="todo">TODO</string>
+    <string name="res">Result = </string>
+    <string name="of"> OF </string>
+    <string name="pick_a_photo">Photo</string>
+    <string name="username">User Name</string>
+    <string name="update">Update</string>
+    <string name="profile">Profile</string>
+    <string name="upload_pdf_file">Upload PDF File</string>
+    <string name="upload_word_file">Upload WORD File</string>
+    <string name="upload_image_file">Upload IMAGE File</string>
+    <string name="upload_video_file">Upload VIDEO File</string>
+    <string name="upload">UPLOAD</string>
+    <string name="select_files_type">Select Files Type:</string>
+    <string name="get_data">GET DATA</string>
+    <string name="pdf">PDF</string>
+    <string name="word">WORD</string>
+    <string name="image">IMAGE</string>
+    <string name="video">VIDEO</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="download">Download</string>
+    <string name="preview">Preview</string>
+    <string name="create">Create</string>
+    <string name="join">join</string>
+    <string name="game_id">Game ID</string>
+    <string name="player2_id">Player2 ID</string>
+    <string name="player3_id">Player3 ID</string>
+    <string name="player4_id">Player4 ID</string>
+    <string name="content">Lectures</string>
+    <string name="exams">Quiz</string>
+    <string name="survey">Survey Item</string>
+    <string name="activity">Activity</string>
+    <string name="uploaded_exams">Uploaded Quiz</string>
+    <string name="contact">Chat</string>
+    <string name="save_current">Save Current</string>
+    <string name="new_">New</string>
+    <string name="upload_saved">Upload Saved</string>
+    <string name="survey_name">Survey Title</string>
+    <string name="surveys">Surveys</string>
+    <string name="create_survey">Create Survey</string>
+    <string name="winners">Winners</string>
+    <string name="_3">3</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="level">Level</string>
+    <string name="easy">EASY</string>
+    <string name="medium">MEDIUM</string>
+    <string name="hard">DIFFICULT</string>
+    <string name="players_number">Players Number</string>
+    <string name="_1_player">1 Player</string>
+    <string name="_2_players">2 Players</string>
+    <string name="_4_players">4 Players</string>
+    <string name="_questions_number">Questions Number</string>
+    <string name="start">START</string>
+    <string name="loading">Loading</string>
+    <string name="waiting_for_all_players_to_get_ready">Waiting For All Players To Get Ready</string>
+    <string name="finish">Finish</string>
+    <string name="play">Play</string>
+    <string name="enter_file_name">Enter File Name:</string>
+    <string name="file_name">File Name</string>
+    <string name="game_questions">Gamified Quiz</string>
+    <string name="level_">Level:</string>
+    <string name="true_false">True | False</string>
+    <string name="multi_choice">Multi Choice</string>
+    <string name="question_type">Question Type:</string>
+    <string name="answer4">Answer4</string>
+    <string name="answer5">Answer5</string>
+    <string name="answer3">Answer3</string>
+    <string name="students_files">Students Files</string>
+    <string name="lectures">Lectures</string>
+    <string name="activities">Activities</string>
+    <string name="games">Games</string>
+    <string name="junior">JUNIOR</string>
+    <string name="upload_file">Upload File</string>
+    <string name="badges">Badges</string>
+    <string name="survey_title">Survey Title</string>
+    <string name="question__">Question</string>
+    <string name="count">Count</string>
+    <string name="points">Points</string>
+    <string name="complex">COMPLEX</string>
+    <string name="detailed">DETAILED</string>
+    <string name="graduate">Graduate</string>
+    <string name="persistence">Persistence</string>
+    <string name="champion">Champion</string>
+    <string name="activeness">Activeness</string>
+
+
+</resources>

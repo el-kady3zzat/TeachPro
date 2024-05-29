@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/bg">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    tools:context=".game.GameActivity">
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/conPlayer1"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="400dp"-->
+    <!--        android:background="@drawable/the_road"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline36"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline35">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvNamePlayer1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textColor="#000"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:visibility="gone"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.507"-->
+    <!--            tools:ignore="TextContrastCheck"-->
+    <!--            tools:text="EL-Kady" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/ivCar1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_marginBottom="16dp"-->
+    <!--            android:contentDescription="@string/todo"-->
+    <!--            android:rotation="-90"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:srcCompat="@drawable/racing_car"-->
+    <!--            tools:ignore="ImageContrastCheck" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline31"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent="0.2" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline32"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent="0.82" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView6"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:contentDescription="@string/todo"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/GIFViewPanel"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:srcCompat="@drawable/fire" />-->
+
+    <!--    <pl.droidsonroids.gif.GifImageView-->
+    <!--        android:id="@+id/GIFViewPanel"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="232dp"-->
+    <!--        android:scaleType="fitStart"-->
+    <!--        android:src="@drawable/panel"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:ignore="ImageContrastCheck" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tvGameQuestion"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:scrollbars="vertical"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/GIFViewPanel"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline31"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/GIFViewPanel" />-->
+
+    <!--    <RadioGroup-->
+    <!--        android:id="@+id/rgGameMC"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/holo_screen"-->
+    <!--        android:paddingTop="15dp"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tvGameQuestion">-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/rbAnswer1"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_marginStart="30dp"-->
+    <!--            android:layout_marginEnd="30dp"-->
+    <!--            android:buttonTint="@color/main"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textColor="@color/main"-->
+    <!--            android:textSize="18sp"-->
+    <!--            tools:ignore="DuplicateSpeakableTextCheck" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/rbAnswer2"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_marginStart="30dp"-->
+    <!--            android:layout_marginEnd="30dp"-->
+    <!--            android:buttonTint="@color/white"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textColor="#FFF"-->
+    <!--            android:textSize="18sp" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/rbAnswer3"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_marginStart="30dp"-->
+    <!--            android:layout_marginEnd="30dp"-->
+    <!--            android:buttonTint="@color/main"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textColor="@color/main"-->
+    <!--            android:textSize="18sp" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/rbAnswer4"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_marginStart="30dp"-->
+    <!--            android:layout_marginEnd="30dp"-->
+    <!--            android:buttonTint="@color/white"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textColor="#FFF"-->
+    <!--            android:textSize="18sp" />-->
+    <!--    </RadioGroup>-->
+
+    <!--    <RadioGroup-->
+    <!--        android:id="@+id/rgGameTF"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/rgGameMC">-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/rbTrue"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:background="@drawable/li1"-->
+    <!--            android:buttonTint="@color/main"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:text="@string/True"-->
+    <!--            android:textColor="@color/main"-->
+    <!--            android:textSize="18sp" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/rbFalse"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:background="@drawable/li2"-->
+    <!--            android:buttonTint="@color/white"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:text="@string/False"-->
+    <!--            android:textColor="#FFF"-->
+    <!--            android:textSize="18sp" />-->
+    <!--    </RadioGroup>-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/conPlayer1"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="400dp"-->
+    <!--        android:background="@drawable/the_road"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline34"-->
+    <!--        app:layout_constraintStart_toStartOf="parent">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvNamePlayer1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textColor="#000"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:visibility="gone"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.507"-->
+    <!--            tools:ignore="TextContrastCheck"-->
+    <!--            tools:text="EL-Kady" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/ivCar1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_marginBottom="16dp"-->
+    <!--            android:contentDescription="@string/todo"-->
+    <!--            android:rotation="-90"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:srcCompat="@drawable/racing_car"-->
+    <!--            tools:ignore="ImageContrastCheck" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/conPlayer2"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginBottom="2dp"-->
+    <!--        android:background="@drawable/the_road"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/conPlayer1"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvNamePlayer2"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textColor="#000"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:ignore="TextContrastCheck"-->
+    <!--            tools:text="EL-Kady" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/ivCar2"-->
+    <!--            android:layout_width="60dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="3dp"-->
+    <!--            android:contentDescription="@string/todo"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:srcCompat="@drawable/racing_car"-->
+    <!--            tools:ignore="ImageContrastCheck" />-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/conPlayer3"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginBottom="2dp"-->
+    <!--        android:background="@drawable/the_road"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/conPlayer2"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvNamePlayer3"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textColor="#000"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.507"-->
+    <!--            tools:ignore="TextContrastCheck"-->
+    <!--            tools:text="EL-Kady" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/ivCar3"-->
+    <!--            android:layout_width="60dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="3dp"-->
+    <!--            android:contentDescription="@string/todo"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:srcCompat="@drawable/racing_car"-->
+    <!--            tools:ignore="ImageContrastCheck" />-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/conPlayer4"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginBottom="2dp"-->
+    <!--        android:background="@drawable/the_road"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/conPlayer3"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvNamePlayer4"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textColor="#000"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:ignore="TextContrastCheck"-->
+    <!--            tools:text="EL-Kady" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/ivCar4"-->
+    <!--            android:layout_width="60dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="3dp"-->
+    <!--            android:contentDescription="@string/todo"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:srcCompat="@drawable/racing_car"-->
+    <!--            tools:ignore="ImageContrastCheck" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline34"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent="0.25" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline35"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent="0.5" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline36"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent="0.75" />-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/conPlayer1"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="400dp"-->
+    <!--        android:background="@drawable/the_road"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline35"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline34">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvNamePlayer1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textColor="#000"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:visibility="gone"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.507"-->
+    <!--            tools:ignore="TextContrastCheck"-->
+    <!--            tools:text="EL-Kady" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/ivCar1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_marginBottom="16dp"-->
+    <!--            android:contentDescription="@string/todo"-->
+    <!--            android:rotation="-90"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:srcCompat="@drawable/racing_car"-->
+    <!--            tools:ignore="ImageContrastCheck" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/conPlayer1"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="400dp"-->
+    <!--        android:background="@drawable/the_road"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline36">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvNamePlayer1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textColor="#000"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:visibility="gone"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.507"-->
+    <!--            tools:ignore="TextContrastCheck"-->
+    <!--            tools:text="EL-Kady" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/ivCar1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_marginBottom="16dp"-->
+    <!--            android:contentDescription="@string/todo"-->
+    <!--            android:rotation="-90"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:srcCompat="@drawable/racing_car"-->
+    <!--            tools:ignore="ImageContrastCheck" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <TextView
+            android:id="@+id/tvGameQuestion"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/et"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/main"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivGameFire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvGameQuestion"
+            app:srcCompat="@drawable/fire"
+            android:contentDescription="@string/todo" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/et"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvGameQuestion">
+
+            <RadioGroup
+                android:id="@+id/rgGameAnswers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/rbGameAnswer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et"
+                    android:buttonTint="@color/main"
+                    android:minHeight="48dp"
+                    android:textColor="@color/main"
+                    android:textSize="16sp"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <RadioButton
+                    android:id="@+id/rbGameAnswer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/et"
+                    android:buttonTint="@color/main"
+                    android:minHeight="48dp"
+                    android:textColor="@color/main"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbGameAnswer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/et"
+                    android:buttonTint="@color/main"
+                    android:minHeight="48dp"
+                    android:textColor="@color/main"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbGameAnswer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/et"
+                    android:buttonTint="@color/main"
+                    android:minHeight="48dp"
+                    android:textColor="@color/main"
+                    android:textSize="16sp" />
+            </RadioGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conMoves"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/et"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/GIFViewBlueHole"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/blue_hole"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ImageContrastCheck" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/GIFViewSpaceShip1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="-5dp"
+                android:rotation="270"
+                android:src="@drawable/space_ship"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/GIFViewBlueHole"
+                tools:ignore="ImageContrastCheck" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/GIFViewSpaceShip"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="270"
+                android:src="@drawable/space_ship"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/GIFViewBlueHole"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/GIFViewBlueHole"
+                tools:ignore="ImageContrastCheck" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/GIFViewSpaceShip2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="-5dp"
+                android:rotation="90"
+                android:src="@drawable/space_ship"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/GIFViewBlueHole"
+                tools:ignore="ImageContrastCheck" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/GIFViewSpaceShip3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-5dp"
+                android:rotation="270"
+                android:src="@drawable/space_ship"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/GIFViewBlueHole"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="ImageContrastCheck" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/GIFViewSpaceShip4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-5dp"
+                android:rotation="90"
+                android:src="@drawable/space_ship"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/GIFViewBlueHole"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/tvPlayer1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/main"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/GIFViewSpaceShip1"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Player1" />
+
+            <TextView
+                android:id="@+id/tvPlayer2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/main"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/GIFViewSpaceShip2"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Player2" />
+
+            <TextView
+                android:id="@+id/tvPlayer4Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/main"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/GIFViewSpaceShip4"
+                tools:text="Player4" />
+
+            <TextView
+                android:id="@+id/tvPlayer3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/main"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/GIFViewSpaceShip3"
+                tools:text="Player3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/GIFViewRocket"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/blue_rocket"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conMoves"
+            tools:ignore="ImageContrastCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
